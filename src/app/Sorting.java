@@ -7,6 +7,6 @@ import java.util.List;
  */
 public class Sorting {
     public void sortingByLastName(List<Name> names) {
-
+        names.sort((name1, name2)->name1.getLastName().compareToIgnoreCase(name2.getLastName()));
     }
 }

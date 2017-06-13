@@ -11,11 +11,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class NameTest {
     @Test
     void parseName() {
-        String testString = "Cong MA";
+        String testString = "Cong Medium MA";
         Name name = new Name();
         name.parseName(testString);
         String[] expectedGivenName = new String[3];
         expectedGivenName[0] = "Cong";
+        expectedGivenName[1] = "Medium";
         String expectedLastName = "MA";
         
         assertArrayEquals(expectedGivenName, name.getGivenName());

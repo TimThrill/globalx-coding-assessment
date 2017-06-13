@@ -10,6 +10,11 @@ import java.util.List;
  * Created by admin on 12/06/2017.
  */
 public class FileIO {
+    /*
+     * Write names to a file
+     * @param path The path of output file
+     * @param names Names to be written to the file
+     */
     public static void writeToFile(String path, List<Name> names) {
         try {
             File f = new File(path);
